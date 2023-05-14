@@ -1,13 +1,16 @@
-import Jogo from './components/Jogo';
-import Letras from './components/Letras';
+import Jogo from './Jogo';
+import Letras from './Letras';
+import Palavras from './palavras';
+
+
 
 
 function App() {
   return (
-    <>
+    <div className='container-game'>
       <Jogo />
       <Letras />
-    </>
+    </div>
   );
 }
 
