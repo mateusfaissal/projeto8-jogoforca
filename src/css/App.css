@@ -1,5 +1,6 @@
 body {
   box-sizing: border-box;
+  background-color: lightgrey;
 }
 
 .container-game {
@@ -7,6 +8,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.titulo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  font-style: bold;
+  color: black;
 }
 
 .main {
@@ -47,12 +55,14 @@ body {
   cursor: pointer;
 }
 
-.main>div>p {
+.word {
+  display: flex;
   font-style: normal;
   font-weight: 700;
   font-size: 50px;
   line-height: 68px;
   text-align: center;
+  letter-spacing: 0.3rem;
 }
 
 .letters {
@@ -64,20 +74,14 @@ body {
   gap: 8px;
 }
 
-.letters>button {
+.button {
   width: 40px;
   height: 40px;
 
-  background: #9FAAB5;
+
   border: 1px solid #7AA7C7;
   border-radius: 3px;
-}
 
-.letters>button:hover {
-  cursor: pointer;
-}
-
-.letters>button>p {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -86,6 +90,19 @@ body {
   color: #798A9F;
 }
 
+.desabilitada {
+  background: #9FAAB5;
+}
+
+.habilitada {
+  background-color: #E1ECF4;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+
 .green {
   color: #27AE60;
 }
@@ -93,3 +110,4 @@ body {
 .red {
   color: #FF0000;
 }
+
